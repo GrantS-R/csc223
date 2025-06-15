@@ -1,7 +1,6 @@
 package Module1;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.prefs.PreferenceChangeEvent;
 
 public class problem1{
     public static void main(String[] args) {
