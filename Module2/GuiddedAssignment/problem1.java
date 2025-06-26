@@ -20,5 +20,6 @@ public class problem1 {
         int int2 = scnr.nextInt();
         System.out.println();
         System.out.println(int1 + " * " + int2 + " = " + multiplication(int1, int2));
+        scnr.close();
     }
 }
