@@ -1,5 +1,6 @@
 package Module3.DiscussionBoard;
 
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintWriter;
 import java.util.Scanner;
@@ -55,7 +56,13 @@ public class EvaluateGCFAlgorithm {
     public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
         String outputFileName = "results.txt";
-        FileOutputStream fos = new FileOutputStream(outputFileName);
+        FileOutputStream fos;
+        try {
+            fos = new FileOutputStream(outputFileName);
+        } catch (FileNotFoundException e) {
+            fos = null;
+            e.printStackTrace();
+        }
         PrintWriter writer = new PrintWriter(fos);
 
         writer.println("a, b | gcf1 | gcf2 | gcf3");
