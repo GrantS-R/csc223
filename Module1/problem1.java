@@ -40,6 +40,8 @@ public class problem1{
         System.out.println();
         System.out.println("The array contating squares of values in the original array is:");
         System.out.println(arrayThings.getArrayAsString(arrayThings.getSquareArray(array)));
+
+        scnr.close();
     }
 
     public String getArrayAsString(int[] array) {

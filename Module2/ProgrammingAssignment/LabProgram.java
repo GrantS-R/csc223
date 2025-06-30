@@ -13,6 +13,7 @@ public class LabProgram {
       for (int j = 0; j < size; ++j) {            // Read the numsbers
          nums[j] = scnr.nextInt();
       }
+      scnr.close();
       return nums;                                // Return the array
    }
 
